@@ -7,7 +7,7 @@ namespace Services.Interfaces
 {
     public interface IMovieService<T>
     {
-        IEnumerable<T> GetMovies();
+        IEnumerable<T> GetAll();
         IQueryable<T> FindBy(Expression<Func<T, bool>> predicate);
         void Add(T entity);
         void Delete(T entity);

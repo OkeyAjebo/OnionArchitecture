@@ -1,14 +1,24 @@
-﻿using System.Web.Mvc;
+﻿using Services;
+using System.Web.Mvc;
 
 namespace MovieHub.Controllers
 {
     [Authorize]
     public class HomeController : Controller
     {
+        private readonly MovieService _movieService;
+
+
+        public HomeController()
+        {
+            _movieService = new MovieService();
+        }
 
         public ActionResult Index()
         {
-            return View();
+            var movie = _movieService.GetMovies();
+
+            return View(movie);
         }
 
         public ActionResult About()

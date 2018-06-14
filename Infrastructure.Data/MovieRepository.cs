@@ -1,5 +1,4 @@
-﻿using Domain.Entities;
-using Domain.Interfaces;
+﻿using Domain.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +6,7 @@ using System.Linq.Expressions;
 
 namespace Infrastructure.Data
 {
-    public class MovieRepository : IMovieRepository<Movie>
+    public class MovieRepository<T> : IMovieRepository<T>
     {
         private readonly MovieDbContext context;
 
@@ -16,39 +15,39 @@ namespace Infrastructure.Data
             context = new MovieDbContext();
         }
 
-        public void Add(Movie entity)
+        public void Add(T entity)
         {
             throw new NotImplementedException();
         }
 
-        public void Delete(Movie entity)
+        public void Delete(T entity)
         {
             throw new NotImplementedException();
         }
 
-        public void Edit(Movie entity)
+        public void Edit(T entity)
         {
             throw new NotImplementedException();
         }
 
-        public IQueryable<Movie> FindBy(Expression<Func<Movie, bool>> predicate)
+        public IQueryable<T> FindBy(Expression<Func<T, bool>> predicate)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Movie> GetMovies()
+        public IEnumerable<T> GetAll()
         {
             throw new NotImplementedException();
         }
 
-        public Movie GetSingle(int id)
+        public T GetSingle(int id)
         {
             throw new NotImplementedException();
         }
 
         public void Save()
         {
-            throw new NotImplementedException();
+            context.SaveChanges();
         }
     }
 }

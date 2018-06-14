@@ -43,11 +43,5 @@
     <Compile Include="IMovieRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Domain.Entities\Domain.Entities.csproj">
-      <Project>{4BE63666-58D3-4B8D-9E30-E56DF5FAC2A9}</Project>
-      <Name>Domain.Entities</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

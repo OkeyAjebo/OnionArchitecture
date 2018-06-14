@@ -48,10 +48,6 @@
       <Project>{4BE63666-58D3-4B8D-9E30-E56DF5FAC2A9}</Project>
       <Name>Domain.Entities</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Domain.Interfaces\Domain.Interfaces.csproj">
-      <Project>{E2497BA1-DBD9-45F1-9283-1828A8D7BBD5}</Project>
-      <Name>Domain.Interfaces</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Infrastructure.Data\Infrastructure.Data.csproj">
       <Project>{5747360A-9D4D-418A-87B3-C4E69BF807DA}</Project>
       <Name>Infrastructure.Data</Name>

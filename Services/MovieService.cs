@@ -1,5 +1,4 @@
-﻿using Domain.Entities;
-using Infrastructure.Data;
+﻿using Infrastructure.Data;
 using Services.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -8,42 +7,42 @@ using System.Linq.Expressions;
 
 namespace Services
 {
-    public class MovieService : IMovieService<Movie>
+    public class MovieService<T> : IMovieService<T>
     {
-        private readonly MovieRepository _repository;
+        private readonly MovieRepository<T> _repository;
 
         public MovieService()
         {
-            _repository = new MovieRepository();
+            _repository = new MovieRepository<T>();
 
         }
 
-        public void Add(Movie entity)
+        public void Add(T entity)
         {
             throw new NotImplementedException();
         }
 
-        public void Delete(Movie entity)
+        public void Delete(T entity)
         {
             throw new NotImplementedException();
         }
 
-        public void Edit(Movie entity)
+        public void Edit(T entity)
         {
             throw new NotImplementedException();
         }
 
-        public IQueryable<Movie> FindBy(Expression<Func<Movie, bool>> predicate)
+        public IQueryable<T> FindBy(Expression<Func<T, bool>> predicate)
         {
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Movie> GetMovies()
+        public IEnumerable<T> GetAll()
         {
-            return _repository.GetMovies();
+            throw new NotImplementedException();
         }
 
-        public Movie GetSingle(int id)
+        public T GetSingle(int id)
         {
             throw new NotImplementedException();
         }
@@ -52,10 +51,5 @@ namespace Services
         {
             throw new NotImplementedException();
         }
-
-        //public IEnumerable<Movie> GetMovies()
-        //{
-        //    return _repository.GetMovies();
-        //}
     }
 }

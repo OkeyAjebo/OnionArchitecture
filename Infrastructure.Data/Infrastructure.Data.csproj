@@ -53,6 +53,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Migrations\201806140853135_Initial.cs" />
+    <Compile Include="Migrations\201806140853135_Initial.Designer.cs">
+      <DependentUpon>201806140853135_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MovieDbContext.cs" />
     <Compile Include="MovieRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -67,13 +72,14 @@
       <Name>Domain.Entities</Name>
     </ProjectReference>
     <ProjectReference Include="..\Domain.Interfaces\Domain.Interfaces.csproj">
-      <Project>{E2497BA1-DBD9-45F1-9283-1828A8D7BBD5}</Project>
+      <Project>{e2497ba1-dbd9-45f1-9283-1828a8d7bbd5}</Project>
       <Name>Domain.Interfaces</Name>
     </ProjectReference>
-    <ProjectReference Include="..\MovieHub\MovieHub.csproj">
-      <Project>{6CC71713-EF0D-44FE-8411-B999ADD65323}</Project>
-      <Name>MovieHub</Name>
-    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201806140853135_Initial.resx">
+      <DependentUpon>201806140853135_Initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
