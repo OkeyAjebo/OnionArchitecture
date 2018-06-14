@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01-Domain", "01-Domain", "{716960F9-3561-4254-8FE7-3A85BE7FFF1A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{716960F9-3561-4254-8FE7-3A85BE7FFF1A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02-Service Interfaces", "02-Service Interfaces", "{9CBE1DBC-4AFB-4CCD-B384-26AB57172380}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service Interfaces", "Service Interfaces", "{9CBE1DBC-4AFB-4CCD-B384-26AB57172380}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03-Services", "03-Services", "{F4440BE1-E4B9-436F-9F4A-05B913B3E19C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{F4440BE1-E4B9-436F-9F4A-05B913B3E19C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04-Infrastructure", "04-Infrastructure", "{F652470B-A868-46F0-A8B7-C22E7B23D604}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{F652470B-A868-46F0-A8B7-C22E7B23D604}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05-User Interface", "05-User Interface", "{BE2379F4-8642-4374-A1D1-547B44F3D6E8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "User Interface", "User Interface", "{BE2379F4-8642-4374-A1D1-547B44F3D6E8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieHub", "MovieHub\MovieHub.csproj", "{6CC71713-EF0D-44FE-8411-B999ADD65323}"
 EndProject
